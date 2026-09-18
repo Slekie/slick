@@ -3,14 +3,18 @@
     "name": "Slick",
     "slug": "slick",
     "version": "1.0.0",
+    "scheme": "slick",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
+    "updates": {
+      "enabled": true
+    },
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#000000"
+      "backgroundColor": "#080B14"
     },
     "ios": {
       "supportsTablet": true,
@@ -19,14 +23,19 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#000000"
+        "backgroundColor": "#080B14"
       },
+      "edgeToEdgeEnabled": true,
       "package": "com.slick.app"
     },
+    "plugins": [
+      "expo-system-ui"
+    ],
     "extra": {
       "eas": {
         "projectId": "62147f18-bef3-464f-9798-f721a3a4e366"
       }
-    }
+    },
+    "owner": "slickai"
   }
 }

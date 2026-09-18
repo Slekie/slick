@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { COLORS, FONTS } from './src/theme';
 
 export default function App() {
   return (
@@ -13,14 +14,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: COLORS.bg,
     alignItems: 'center',
     justifyContent: 'center',
   },
   text: {
-    color: '#FFFFFF',
-    fontSize: 28,
-    fontWeight: 'bold',
+    color: COLORS.text,
+    fontSize: FONTS.sizes['3xl'],
+    fontWeight: FONTS.weights.bold,
     letterSpacing: 1,
   },
 });
